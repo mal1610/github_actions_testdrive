@@ -2,7 +2,6 @@ provider "aws" {
   region = "ap-southeast-1"
 }
 
-
 terraform {
   backend "s3" {
     bucket = "malcolm-tfstate"
@@ -11,7 +10,7 @@ terraform {
   }
 }
 
-resource "aws_s3_bucket" "malcolm-example" {
+resource "aws_s3_bucket" "example-malcolm-ce8" {
   bucket = "my-tf-test-bucket"
   force_destroy = true
 }
