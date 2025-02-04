@@ -8,7 +8,7 @@ resource "aws_s3_bucket" "malcolm-example" {
 
 terraform {
   backend "s3" {
-    bucket = "malcolm-example"
+    bucket = "malcolm-tfstate"
     key    = "malcolm-tfstate"
     region = "ap-southeast-1"
   }
