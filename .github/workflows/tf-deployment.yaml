@@ -1,8 +1,7 @@
-name: Terraform Deployment
+name: Terraform Destruction
 
 on:
-  push:
-    branches: [ "main" ]
+  workflow_dispatch
 
 env:            
   AWS_REGION: ap-southeast-1  
@@ -31,6 +30,6 @@ jobs:
     - name: Terraform Plan
       run: terraform plan
    
-    - name: Terraform Apply
-      run: terraform apply --auto-approve
+    - name: Terraform Destroy
+      run: terraform destroy --auto-approve
 
