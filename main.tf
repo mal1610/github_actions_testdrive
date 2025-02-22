@@ -11,6 +11,6 @@ terraform {
 }
 
 resource "aws_s3_bucket" "example-malcolm-ce8" {
-  bucket = "malcolm-github-actions-tf-test-bucket"
+  bucket = "malcolm-github-actions-tf-bucket"
   force_destroy = true
 }
